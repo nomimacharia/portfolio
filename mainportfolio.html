@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naomi Macharia | Full Stack & Cybersecurity Engineer</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ════════════════════════════════
+       NAVBAR
+  ════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <div class="logo">Naomi<span class="logo-dot">Macharia</span></div>
+
+      <!-- Desktop links — class matches CSS media query -->
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#tools">Tools</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="dark-toggle" id="darkToggle" onclick="toggleDark()" aria-label="Toggle dark mode">🌙</button>
+        <!-- Hamburger — functional JS below -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile dropdown menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about"      onclick="toggleMenu()">About</a>
+      <a href="#experience" onclick="toggleMenu()">Experience</a>
+      <a href="#projects"   onclick="toggleMenu()">Projects</a>
+      <a href="#tools"      onclick="toggleMenu()">Tools</a>
+      <a href="#contact"    onclick="toggleMenu()">Contact</a>
+    </div>
+  </nav>
+
+
+  <!-- ════════════════════════════════
+       HERO — proper <section> wrapper
+  ════════════════════════════════ -->
+  <section id="hero">
+    <div class="container hero">
+      <span class="hero-badge">
+        <span class="live-dot"></span> Available for Projects · Nairobi, Kenya
+      </span>
+      <h1>
+        Full Stack Developer<br>
+        <span class="accent-text">&amp; Cybersecurity</span><br>
+        Engineer
+      </h1>
+      <p class="hero-sub">
+        I design and build secure, scalable systems powered by modern web
+        technologies and AI-driven security solutions.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#contact"  class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════
+       ABOUT
+  ════════════════════════════════ -->
+  <section id="about" class="about-section">
+    <div class="section-header">
+      <p class="section-label">OVERVIEW</p>
+      <h2 class="section-title">About The Developer</h2>
+    </div>
+
+    <div class="bento-grid">
+
+      <div class="bento-card card-who">
+        <div class="card-header">
+          <div class="icon-wrapper icon-blue"><i class="fa-regular fa-user"></i></div>
+          <h3>Who Am I?</h3>
+        </div>
+        <p class="card-desc">
+          Hello, I am Naomi Macharia, a Fullstack Developer based in Nairobi. I am passionate about
+          engineering digital interfaces that seamlessly integrate robust functionality with
+          sophisticated design. Leveraging my background in Computer Science, I specialize in
+          bridging the gap between complex backend logic and intuitive user experiences.
+        </p>
+      </div>
+
+      <div class="bento-card card-stats">
+        <div class="stat-block">
+          <h2>3+</h2>
+          <span>YEARS EXPERIENCE</span>
+        </div>
+         <div class="stat-divider"></div>
+        <div class="stat-block">
+          <h2>10+</h2>
+          <span>PROJECTS DONE</span>
+        </div>
+      </div>
+
+      <div class="bento-card card-focus">
+        <div class="card-header card-header--between">
+          <h3>Current Focus</h3>
+          <i class="fa-solid fa-bullseye focus-icon"></i>
+        </div>
+        <p class="card-desc card-desc--sm">Deep diving into <strong>Web3 &amp; AI Integration</strong>.</p>
+        <div class="badge-row">
+          <span class="badge">Solidity</span>
+          <span class="badge">OpenAI</span>
+        </div>
+      </div>
+
+      <div class="bento-card card-base">
+        <div class="card-header card-header--between">
+          <h3>Base Station</h3>
+          <div class="icon-wrapper icon-green"><i class="fa-solid fa-globe"></i></div>
+        </div>
+        <p class="card-desc card-desc--sm">Kenya, Nairobi</p>
+       <div class="status-indicator">
+          <span class="status-dot"></span>
+          <span class="status-text">Open for Remote Work</span>
+        </div>
+      </div>
+
+      <div class="bento-card card-stack">
+        <h3>Core Stack</h3>
+        <div class="tech-pills">
+          <div class="tech-pill"><i class="fa-brands fa-react"></i> React</div>
+          <div class="tech-pill"><i class="fa-brands fa-cuttlefish"></i> C++</div>
+          <div class="tech-pill"><i class="fa-brands fa-python"></i> Python</div>
+          <div class="tech-pill"><i class="fa-brands fa-java"></i> Java</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- EDUCATION & EXPERIENCE-->
+  <section id="experience" class="experience-section">
+    <div class="section-header">
+      <p class="section-label">BACKGROUND</p>
+      <h2 class="section-title">Education &amp; Experience</h2>
+    </div>
+
+    <div class="timeline-grid">
+
+      <div class="exp-card">
+        <i class="fa-solid fa-layer-group exp-bg-icon"></i>
+        <div class="year-badge">2025 — Now</div>
+        <h3 class="exp-role">Senior Frontend Dev</h3>
+        <span class="exp-company">Tech Startup Nomitech</span>
+        <p class="exp-desc">Led a team of 5 developers, implemented micro-frontend architecture, and optimized web performance by up to 40%.</p>
+      </div>
+
+      <div class="exp-card exp-card--highlight">
+        <i class="fa-solid fa-code exp-bg-icon"></i>
+        <div class="year-badge">2023 — 2024</div>
+        <h3 class="exp-role">Web Developer</h3>
+        <span class="exp-company">Freelance Professional</span>
+        <p class="exp-desc">Completed 30+ international website projects. Specialized in creating high-converting online stores and landing pages.</p>
+      </div>
+
+      <div class="exp-card">
+        <i class="fa-solid fa-user-graduate exp-bg-icon"></i>
+        <div class="year-badge">2016 — 2020</div>
+        <h3 class="exp-role">Bachelor of Computer Science</h3>
+        <span class="exp-company">Karatina University</span>
+        <p class="exp-desc">Graduated Cum Laude (GPA 3.8). Head of the Research &amp; Technology Division of the Faculty Student Council. Winner of the 2026 National Hackathon.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- TOOLS  (was placed before Projects in original) -->
+  <section id="tools" class="tools-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">TECH STACK</p>
+        <h2 class="section-title">Tools &amp; Workflow</h2>
+      </div>
+
+      <div class="tools-grid">
+        <div class="tool-card"><i class="fa-brands fa-react"></i><span>React</span></div>
+        <div class="tool-card"><i class="fa-brands fa-node-js"></i><span>Node.js</span></div>
+        <div class="tool-card"><i class="fa-brands fa-python"></i><span>Python</span></div>
+        <div class="tool-card"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+        <div class="tool-card"><i class="fa-solid fa-shield-halved"></i><span>CyberSec</span></div>
+        <div class="tool-card"><i class="fa-brands fa-java"></i><span>Java</span></div>
+        <div class="tool-card"><i class="fa-brands fa-cuttlefish"></i><span>C++</span></div>
+        <div class="tool-card"><i class="fa-solid fa-database"></i><span>SQL</span></div>
+        <div class="tool-card"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+        <div class="tool-card"><i class="fa-solid fa-robot"></i><span>OpenAI API</span></div>
+      </div>
+
+      <!-- Password strength analyzer -->
+      <div class="card password-card">
+        <h3><i class="fa-solid fa-lock"></i> Password Strength Analyzer</h3>
+        <div class="password-input-wrap">
+          <input id="passwordInput" type="password" placeholder="Enter a password to test…">
+          <button onclick="analyzePassword()" class="btn btn-primary">Analyze</button>
+        </div>
+        <p id="passwordResult"></p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════
+       PROJECTS
+  ════════════════════════════════ -->
+  <section id="projects" class="projects-section">
+    <div class="section-header">
+      <p class="section-label">PORTFOLIO</p>
+      <h2 class="section-title">Featured Projects</h2>
+    </div>
+
+    <div class="slider-wrapper">
+      <button class="slide-btn" id="slideLeft" aria-label="Scroll left">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <div class="projects-slider" id="projectsSlider">
+
+        <div class="project-card">
+          <div class="project-image">
+            <!-- Fixed: meaningful icon instead of generic fa-image placeholder -->
+            <i class="fa-solid fa-bag-shopping project-icon"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">E-Commerce Platform</h3>
+            <!-- Fixed: typo "prodects" → "products", removed dangling comma -->
+            <p class="project-desc">A full-stack online store for beauty products with cart management and M-Pesa payment integration.</p>
+            <div class="project-links">
+              <a href="#" class="btn-live">Live Demo</a>
+              <a href="#" class="btn-code">Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fa-solid fa-briefcase project-icon"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Website Portfolio</h3>
+            <p class="project-desc">My website portfolio</p>
+            <div class="project-links">
+              <a href="#" class="btn-live">Live Demo</a>
+              <a href="#" class="btn-code">Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fa-solid fa-piggy-bank project-icon"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Smart Saver</h3>
+            <p class="project-desc">A budgeting tool that helps students manage their money and build healthy savings habits through intelligent spending tracking.</p>
+            <div class="project-links">
+              <a href="#" class="btn-live">Live Demo</a>
+              <a href="#" class="btn-code">Code</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="slide-btn" id="slideRight" aria-label="Scroll right">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       CONTACT
+  ════════════════════════════════ -->
+  <section id="contact" class="contact-section">
+    <div class="section-header section-header--center">
+      <p class="section-label">CONTACT ME</p>
+      <h2 class="section-title">Let's Connect</h2>
+    </div>
+
+    <div class="contact-container">
+
+      <div class="contact-info">
+        <div class="info-card">
+          <div class="info-icon-box"><i class="fa-regular fa-envelope"></i></div>
+          <div class="info-details">
+            <!-- Fixed: renamed .label → .info-label to avoid collision with about section -->
+            <span class="info-label">EMAIL ADDRESS</span>
+            <p>macharianomi@gmail.com</p>
+          </div>
+          <button class="copy-btn" onclick="copyEmail()" aria-label="Copy email">
+            <i class="fa-regular fa-copy" id="copyIcon"></i>
+          </button>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon-box"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="info-details">
+            <span class="info-label">LOCATION</span>
+            <p>Nairobi, Kenya</p>
+          </div>
+        </div>
+
+        <div class="social-row">
+          <a href="#mailto" class="social-card">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+          </a>
+          <!-- Fixed: icon changed to fa-whatsapp to match label -->
+          <a href="#" class="social-card">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
+          <a href="#" class="social-card">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrapper">
+        <div class="form-header">
+          <h3>Send Message_</h3>
+          <div class="win-dots">
+            <span class="win-dot win-dot--red"></span>
+            <span class="win-dot win-dot--yellow"></span>
+            <span class="win-dot win-dot--green"></span>
+          </div>
+        </div>
+
+        <!-- Fixed: removed action="#", using JS onsubmit instead -->
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <input type="text"  placeholder="Name"          required>
+            <input type="email" placeholder="Email Address" required>
+          </div>
+          <div class="form-group">
+            <select required>
+              <option value="" disabled selected>Select Project Type</option>
+              <option value="web">Web Development</option>
+              <option value="app">Mobile App</option>
+              <option value="design">UI/UX Design</option>
+              <option value="security">Cybersecurity</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea rows="5" placeholder="Tell me about your project…" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn" id="submitBtn">
+            Send Message <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+<!--CHATBOT
+-->
+<div class="chat-float">
+
+  <!-- expanded card -->
+  <div class="chat-card" id="chatCard">
+    <div class="chat-topbar">
+      <div class="win-dots">
+        <div class="win-dot win-dot--red"></div>
+        <div class="win-dot win-dot--yellow"></div>
+        <div class="win-dot win-dot--green"></div>
+      </div>
+      <span class="chat-title-bar">assistant.ai</span>
+      <span class="chat-online">online</span>
+    </div>
+
+    <div class="chat-window" id="chatWindow">
+      <div class="chat-msg chat-msg--ai">Hey 👋 How can I help you today?</div>
+    </div>
+
+    <div class="chat-input-area">
+      <input id="chatInput" type="text" placeholder="Ask me anything…" autocomplete="off" />
+      <button id="sendBtn">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+        </svg>
+        Send
+      </button>
+    </div>
+  </div>
+
+  <!-- FAB -->
+  <button class="chat-fab" id="chatFab" aria-label="Toggle chat">
+    <span class="fab-badge" id="fabBadge">1</span>
+
+    <!-- chat bubble icon -->
+    <svg class="fab-icon-chat" width="26" height="26" viewBox="0 0 24 24" fill="none"
+         stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+    </svg>
+
+    <!-- close X icon -->
+    <svg class="fab-icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none"
+         stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+    </svg>
+  </button>
+</div>
+  <!-- ════════════════════════════════
+       FOOTER
+  ════════════════════════════════ -->
+  <footer>
+    <span>© 2026 Naomi Macharia.</span>
+    <span class="footer-right">Nairobi, Kenya</span>
+  </footer>
+
+
+  <!-- ════════════════════════════════
+       ALL SCRIPTS AT BOTTOM OF BODY
+       (fixed: was scattered mid-page)
+  ════════════════════════════════ -->
+  <script>
+    /* ── Dark mode toggle ── */
+    function toggleDark() {
+      document.body.classList.toggle('dark');
+      document.getElementById('darkToggle').textContent =
+        document.body.classList.contains('dark') ? '☀️' : '🌙';
+    }
+
+    /* ── Hamburger menu ── */
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+      document.getElementById('hamburger').classList.toggle('active');
+    }
+
+    /* ── Project slider ── */
+    const slider = document.getElementById('projectsSlider');
+    document.getElementById('slideLeft') .addEventListener('click', () => slider.scrollBy({ left: -380, behavior: 'smooth' }));
+    document.getElementById('slideRight').addEventListener('click', () => slider.scrollBy({ left:  380, behavior: 'smooth' }));
+
+    /* ── Copy email ── */
+    function copyEmail() {
+      navigator.clipboard.writeText('macharianomi@gmail.com').then(() => {
+        const icon = document.getElementById('copyIcon');
+        icon.className = 'fa-solid fa-check';
+        setTimeout(() => { icon.className = 'fa-regular fa-copy'; }, 2000);
+      });
+    }
+
+    /* ── Contact form submit ── */
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submitBtn');
+      btn.innerHTML = '✓ Sent!';
+      btn.style.background = '#22c55e';
+      setTimeout(() => {
+        btn.innerHTML = 'Send Message <i class="fa-solid fa-arrow-right"></i>';
+        btn.style.background = '';
+        e.target.reset();
+      }, 3000);
+    }
+
+    /* ── Password analyzer ── */
+    function analyzePassword() {
+      const pw  = document.getElementById('passwordInput').value;
+      const out = document.getElementById('passwordResult');
+      if (!pw) { out.textContent = 'Please enter a password.'; out.className = 'pw-weak'; return; }
+      let score = 0;
+      if (pw.length >= 8)           score++;
+      if (pw.length >= 12)          score++;
+      if (/[A-Z]/.test(pw))         score++;
+      if (/[0-9]/.test(pw))         score++;
+      if (/[^A-Za-z0-9]/.test(pw))  score++;
+      const levels  = ['', 'Very Weak 🔴', 'Weak 🟠', 'Fair 🟡', 'Strong 🟢', 'Very Strong 💪'];
+      const classes = ['', 'pw-very-weak', 'pw-weak', 'pw-fair', 'pw-strong', 'pw-very-strong'];
+      out.textContent = levels[score]  || levels[1];
+      out.className   = classes[score] || classes[1];
+    }
+
+    /* ── AI Chatbot ── */
+    const fab       = document.getElementById('chatFab');
+  const card      = document.getElementById('chatCard');
+  const input     = document.getElementById('chatInput');
+  const sendBtn   = document.getElementById('sendBtn');
+  const window_   = document.getElementById('chatWindow');
+  const badge     = document.getElementById('fabBadge');
+
+  let isOpen = false;
+
+  function toggle() {
+    isOpen = !isOpen;
+    card.classList.toggle('open', isOpen);
+    fab.classList.toggle('open', isOpen);
+    if (isOpen) {
+      badge.classList.add('hidden');
+      setTimeout(() => input.focus(), 320);
+    }
+  }
+
+  fab.addEventListener('click', toggle);
+
+  function addMsg(text, role) {
+    const div = document.createElement('div');
+    div.className = `chat-msg chat-msg--${role}`;
+    div.textContent = text;
+    window_.appendChild(div);
+    window_.scrollTop = window_.scrollHeight;
+  }
+
+  function showTyping() {
+    const t = document.createElement('div');
+    t.className = 'chat-typing';
+    t.id = 'typingIndicator';
+    t.innerHTML = '<span></span><span></span><span></span>';
+    window_.appendChild(t);
+    window_.scrollTop = window_.scrollHeight;
+    return t;
+  }
+
+  const aiReplies = [
+    "Great question! Let me look into that for you.",
+    "I can definitely help with that.",
+    "Sure thing — here's what I found.",
+    "Interesting! Here's my take on that.",
+    "On it! Give me just a moment.",
+  ];
+
+  async function send() {
+    const text = input.value.trim();
+    if (!text) return;
+    input.value = '';
+    sendBtn.disabled = true;
+
+    addMsg(text, 'user');
+    const typing = showTyping();
+
+    await new Promise(r => setTimeout(r, 1200 + Math.random() * 600));
+    typing.remove();
+    addMsg(aiReplies[Math.floor(Math.random() * aiReplies.length)], 'ai');
+    sendBtn.disabled = false;
+    input.focus();
+  }
+
+  sendBtn.addEventListener('click', send);
+  input.addEventListener('keydown', e => { if (e.key === 'Enter') send(); });
+</script>
+  
+
+</body>
+</html>
